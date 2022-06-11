@@ -2,6 +2,7 @@
   <head>
     <title>심닥</title>
     <link href="index.css" type="text/css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div id="header">
@@ -14,23 +15,44 @@
         <img src="image/banner.jpg" />
       </div>
       <h1>병원 리스트</h1>
-      <div id="hospital-list">
-        <div class="hospital-card">
-          <div>
-            <img class="hospital-img" src="image/hospital1.png" />
-          </div>
-          <div class="hospital-content">
-            <span class="hospital-name">고대안암병원</span>
-            <span class="hospital-number">02-111-1111</span>
-          </div>
-        </div>
-        <div class="hospital-card"></div>
-        <div class="hospital-card"></div>
-        <div class="hospital-card"></div>
-        <div class="hospital-card"></div>
-        <div class="hospital-card"></div>
-      </div>
+      <div id="hospital-list"></div>
     </div>
     <div id="footer"></div>
   </body>
+  <script>
+    axios
+      .get(
+        "https://39f49a3a-feeb-400e-b3ae-fc9c0e5079d1.mock.pstmn.io/hospitals"
+      )
+      .then(function (result) {
+        console.log("Status : ", result);
+        const hospitals = result.data.hospitals;
+        let hospitalHtml = "";
+        for (var i = 0; i < hospitals.length; i++) {
+          let hospital = hospitals[i];
+          hospitalHtml =
+            hospitalHtml +
+            '<div class="hospital-card">' +
+            "<div>" +
+            '<img class="hospital-img" src="' +
+            hospital.imageUrl +
+            '" />' +
+            "</div>" +
+            '<div class="hospital-content">' +
+            '<span class="hospital-name">' +
+            hospital.name +
+            "</span>" +
+            '<span class="hospital-number">' +
+            hospital.number +
+            "</span>" +
+            "</div>" +
+            "</div>";
+        }
+
+        document.querySelector("#hospital-list").innerHTML = hospitalHtml;
+      })
+      .catch(function (error) {
+        console.error("Error : ", error);
+      });
+  </script>
 </html>
