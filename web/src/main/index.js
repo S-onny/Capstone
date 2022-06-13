@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function MainPage() {
   const [hospitlas, setHospitals] = React.useState([]);
@@ -35,13 +36,15 @@ function MainPage() {
           {hospitlas.map(function (hospital, index) {
             return (
               <div className="hospital-card">
-                <div>
-                  <img className="hospital-img" src={hospital.imageUrl} />
-                </div>
-                <div className="hospital-contents">
-                  <span className="hospital-name">{hospital.name}</span>
-                  <span className="number">{hospital.number}</span>
-                </div>
+                <Link className="hospital-link" to={`/hospital/${index}`}>
+                  <div>
+                    <img className="hospital-img" src={hospital.imageUrl} />
+                  </div>
+                  <div className="hospital-contents">
+                    <span className="hospital-name">{hospital.name}</span>
+                    <span className="number">{hospital.number}</span>
+                  </div>
+                </Link>
               </div>
             );
           })}
