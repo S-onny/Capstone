@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="kr">
-    <head>
-        <title>EasyDoc</title>
-        <meta charset="utf-8"/>
-        <meta content="병원 갈 시간 없을 때! 쉽고 빠른 내 몸 진단!" name="description"/>
-        <link href="index.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <main>
-            <img id="logo_index" src="../image/red_cross.jpeg"/>
-            <form id="login_form">
-                <input class="login_input" type="text" placeholder="아이디"/>
-                <input class="login_input" type="password" placeholder="비밀번호"/>
-                <input class="login_btn" type="submit" value="로그인"/>
-            </form>
-        </main>
-        <footer></footer>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쉽고 빠른 자가진단</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>어디가 아프신가요?</h1>
+    <div class="image-container">
+        <img src="./image/body.png" usemap="#image-map">
+        <map name="image-map">
+            <area target="" alt="head" title="head" href="diagnosis.html" coords="262,31,240,41,238,68,249,96,273,96,283,66,278,38" shape="poly"></area>
+            <area target="" alt="shoulders" title="shoulders" href="diagnosis.html" coords="206,103,319,132" shape="rect"></area>
+            <area target="" alt="chest" title="chest" href="diagnosis.html" coords="205,134,318,179" shape="rect"></area>
+            <area target="" alt="left arm" title="left arm" href="diagnosis.html" coords="197,182,173,292,200,299,202,282,211,251,223,182,223,182" shape="poly"></area>
+            <area target="" alt="right arm" title="right arm" href="diagnosis.html" coords="300,183,322,295,350,296,337,248,321,184" shape="poly"></area>
+            <area target="" alt="waist" title="waist" href="diagnosis.html" coords="222,237,226,186,284,186,291,186,301,237" shape="poly"></area>
+            <area target="" alt="left leg" title="left leg" href="diagnosis.html" coords="217,293,226,342,221,388,234,449,219,480,241,489,255,466,252,394,256,292" shape="poly"></area>
+            <area target="" alt="right leg" title="right leg" href="diagnosis.html" coords="267,294,269,376,274,455,269,467,282,491,300,480,296,382,302,292" shape="poly"></area>
+        </map>
+    </div>
+</body>
 </html>

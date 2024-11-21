@@ -1,35 +1,18 @@
-main {
-    margin-top: 200px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-#logo_index {
-    width: 200px;
-    height: 200px;
+.image-container {
+    text-align: center;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15px;
-}
-
-input {
-    width: 200px;
-    height: 20px;
-    border-radius: 5px;
-}
-
-.login_input {
-    margin-bottom: 5px;
-    border: 0.5px solid gray;
-}
-
-.login_btn {
-    background-color: skyblue;
-    border: none;
-    margin-top: 6px;
+h1 {
+    margin-bottom: 100px;
 }
