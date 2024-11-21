@@ -24,4 +24,4 @@ df = pd.DataFrame(data, columns=['body_part', 'pain_type', 'bruising', 'pain_lev
 print(df.head())
 
 # Save to CSV
-df.to_csv('synthetic_data.csv', index=False)
+df.to_csv('generated_data.csv', index=False)
