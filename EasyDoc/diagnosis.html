@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쉽고 빠른 자가진단</title>
+    <link rel="stylesheet" href="./diagnosis.css">
+</head>
+<body>
+    <div class="container">
+        <h1>자세한 진단을 위해 몇 가지 질문을 드리겠습니다.</h1>
+        <form id="diagnosis-form" action="/submit-diagnosis" method="post">
+            <label for="body-part">정확히 어느 부위가 아픈가요?</label>
+            <input type="text" id="body-part" name="body-part" placeholder="예: 왼쪽 어깨" required>
+
+            <label for="pain-type">어떻게 아픈가요?</label>
+            <textarea id="pain-type" name="pain-type" placeholder="예: 쑤시거나 찌르는 듯한 통증" required></textarea>
+
+            <label for="bruising">멍이 들거나 부어있나요?</label>
+            <select id="bruising" name="bruising" required>
+                <option value="yes">네</option>
+                <option value="no">아니오</option>
+            </select>
+
+            <label for="pain-level">통증의 정도는 0~10점 중 어느정도인가요? (0 : 통증 없음, 10 : 통증 매우 심함)</label>
+            <input type="range" id="pain-level" name="pain-level" min="0" max="10" step="1" required>
+            <span id="pain-level-output">5</span>
+
+            <button type="submit">진단하기</button>
+        </form>
+    </div>
+
+    <script>
+        // Display selected pain level for the range input
+        const painLevelInput = document.getElementById('pain-level');
+        const painLevelOutput = document.getElementById('pain-level-output');
+
+        painLevelInput.addEventListener('input', () => {
+            painLevelOutput.textContent = painLevelInput.value;
+        });
+    </script>
+</body>
+</html>
