@@ -1,0 +1,101 @@
+body_part,pain_type,bruising,pain_level,diagnosis
+chest,aching,yes,8,muscle strain
+right arm,sharp,yes,7,arthritis
+right arm,throbbing,no,3,arthritis
+left arm,aching,yes,4,sprain
+right arm,sharp,yes,1,muscle strain
+right arm,burning,yes,6,arthritis
+left leg,aching,no,4,muscle strain
+right leg,throbbing,no,5,dislocation
+shoulders,aching,yes,4,sprain
+shoulders,burning,yes,7,fracture
+right arm,dull,no,2,fracture
+left arm,burning,yes,6,fracture
+left leg,dull,yes,6,muscle strain
+left leg,dull,no,0,fracture
+left arm,aching,no,1,arthritis
+shoulders,sharp,yes,5,fracture
+left arm,burning,yes,0,dislocation
+left leg,throbbing,no,2,sprain
+left leg,dull,no,9,arthritis
+right arm,sharp,no,7,dislocation
+head,burning,no,1,fracture
+head,dull,no,10,arthritis
+waist,sharp,no,0,dislocation
+right leg,aching,yes,8,dislocation
+head,dull,yes,10,dislocation
+head,burning,no,0,sprain
+right leg,burning,no,1,dislocation
+head,dull,yes,2,arthritis
+head,aching,no,7,fracture
+left arm,dull,yes,6,arthritis
+right arm,burning,no,0,muscle strain
+right leg,sharp,no,4,sprain
+shoulders,dull,yes,2,fracture
+shoulders,throbbing,yes,0,muscle strain
+right arm,aching,no,4,muscle strain
+left arm,burning,yes,0,arthritis
+waist,sharp,yes,6,arthritis
+head,burning,yes,1,sprain
+head,dull,yes,7,dislocation
+chest,throbbing,yes,6,muscle strain
+right arm,dull,yes,1,arthritis
+right arm,burning,yes,1,dislocation
+chest,burning,no,5,fracture
+right arm,dull,no,9,sprain
+waist,throbbing,no,5,fracture
+right leg,aching,no,2,arthritis
+left leg,aching,yes,3,sprain
+right leg,aching,yes,7,dislocation
+right leg,burning,no,7,sprain
+right leg,dull,no,4,dislocation
+shoulders,aching,no,10,arthritis
+right leg,throbbing,no,7,arthritis
+waist,sharp,yes,2,sprain
+chest,aching,no,6,muscle strain
+right arm,burning,yes,4,dislocation
+head,dull,yes,4,muscle strain
+waist,aching,yes,1,dislocation
+chest,aching,no,4,arthritis
+head,sharp,yes,5,dislocation
+right leg,sharp,no,5,sprain
+right leg,throbbing,yes,0,fracture
+right leg,aching,yes,9,fracture
+right arm,aching,yes,6,arthritis
+waist,aching,no,4,muscle strain
+left arm,throbbing,no,9,dislocation
+waist,sharp,no,4,muscle strain
+shoulders,aching,no,4,sprain
+left leg,sharp,yes,9,muscle strain
+shoulders,throbbing,yes,7,arthritis
+right leg,dull,no,9,muscle strain
+left arm,throbbing,no,7,muscle strain
+head,sharp,no,9,dislocation
+head,dull,yes,7,arthritis
+shoulders,burning,yes,1,dislocation
+chest,dull,yes,5,arthritis
+shoulders,dull,yes,9,fracture
+left arm,throbbing,no,2,arthritis
+head,throbbing,no,5,arthritis
+chest,aching,no,2,dislocation
+right arm,aching,no,10,fracture
+head,aching,no,8,fracture
+right leg,burning,yes,2,dislocation
+chest,aching,yes,1,sprain
+chest,burning,yes,2,arthritis
+right leg,aching,no,4,muscle strain
+chest,dull,no,1,dislocation
+waist,dull,yes,8,arthritis
+right arm,throbbing,no,1,dislocation
+waist,throbbing,no,10,arthritis
+right arm,throbbing,no,9,dislocation
+right arm,sharp,yes,5,sprain
+right arm,sharp,yes,9,muscle strain
+shoulders,sharp,yes,8,sprain
+left arm,sharp,yes,2,dislocation
+head,sharp,yes,0,arthritis
+chest,dull,yes,5,dislocation
+left arm,dull,yes,9,arthritis
+shoulders,dull,yes,8,muscle strain
+left leg,sharp,yes,8,muscle strain
+right leg,aching,no,5,dislocation
